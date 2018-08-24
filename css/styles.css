@@ -830,6 +830,9 @@ textarea:-moz-placeholder {
                 .section-mission .content strong {
                     color: #82c343;
                 }
+                .section-mission .content ul > li {
+                    padding-left: 0;
+                }
                 .section-mission .content ul > li:before {
                     position: relative;
                     top: auto;
