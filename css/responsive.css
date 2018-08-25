@@ -360,7 +360,6 @@
         -o-transition: background-color .35s ease-in;
         transition: background-color .35s ease-in;
     }
-
     #header.scrolling {
         position: fixed;
         width: 100%;
