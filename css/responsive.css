@@ -1,6 +1,17 @@
 @media all and (max-width: 1800px) {}
 
-@media all and (max-width: 1500px) {}
+@media all and (max-width: 1500px) {
+    .bridge-img.img-people {
+        max-width: 100%;
+    }
+    .feasibility-img-box img {
+        max-width: -webkit-calc(100% + 60px);
+        max-width: calc(100% + 60px);
+    }
+    .contact-form-img-wrap img {
+        max-width: 100%;
+    }
+}
 
 @media all and (max-width: 1200px) {
     .logo {
@@ -12,6 +23,9 @@
     }
     .content.big {
         font-size: 30px;
+    }
+    .content {
+        font-size: 26px;
     }
     .why-we-box .left-box {
         padding-right: 30px;
@@ -28,6 +42,32 @@
         /*.member-img-wrap {*/
             /*padding-bottom: 94.3%;*/
         /*}*/
+    .planning-services-box .inner-box {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .icon-factory {
+        top: 0;
+        right: -30px;
+        max-width: 220px;
+    }
+    .section-what-we-do .section-title.big {
+        font-size: 50px;
+    }
+    .contact-form-list > li {
+        margin: 0 -13px 12px;
+    }
+        .input-textarea-box,
+        .input-box {
+            padding: 0 13px;
+        }
+    .contact-form-img-wrap:after {
+        left: -100px;
+        height: 80px;
+    }
+    .section-contact-us {
+        padding-top: 80px;
+    }
 }
 
 @media all and (max-width: 900px) {
@@ -73,8 +113,20 @@
         .section-title {
             font-size: 38px;
         }
+        .section-contact-us .section-title.big {
+            margin-bottom: 30px;
+        }
+        .section-contact-us .section-title.big,
+        .section-what-we-do .section-title.big,
         .section-title.big {
             font-size: 44px;
+        }
+        .contact-email,
+        .contact-address {
+            font-size: 28px;
+        }
+        .content {
+            font-size: 24px;
         }
         .content.big {
             font-size: 26px;
@@ -193,6 +245,110 @@
                         .footer-text {
                             font-size: 18px;
                         }
+    .feasibility-box .left-box,
+    .feasibility-box .right-box {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .feasibility-box .left-box {
+        margin-bottom: 20px;
+    }
+    .feasibility-img-box {
+        left: -25px;
+    }
+    .feasibility-img-box:before {
+        top: 40px;
+        left: auto;
+        right: -50px;
+    }
+        .feasibility-img-box img {
+            max-width: 100%;
+            max-width: -webkit-calc(100% + 25px);
+            max-width: calc(100% + 25px);
+        }
+        .box-title {
+            font-size: 32px;
+        }
+        .planning-services-box .content {
+            column-count: 1;
+            column-gap: 0;
+        }
+    .customized-box .left-box,
+    .customized-box .right-box {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .customized-box .inner-box {
+        padding-left: 0;
+    }
+    .customized-box .left-box {
+        display: none;
+    }
+    .additional-box {
+        margin-top: 40px;
+    }
+    .additional-box .inner-box {
+        padding-top: 40px;
+    }
+    .system-solution-box .inner-box {
+        max-width: 100%;
+    }
+    .system-solution-box .left-box {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .system-solution-box .right-box {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .system-solution-box .box-title {
+        margin-bottom: 14px;
+    }
+    .system-solution-box {
+        margin-bottom: 0;
+    }
+    .section-what-we-do {
+        padding-bottom: 50px;
+    }
+    .icon-pencil {
+        left: auto;
+        top: -50px;
+        right: 20px;
+    }
+    .icon-screw {
+        top: 200px;
+        left: auto;
+        right: 0;
+    }
+    .contact-form-box label {
+        font-size: 26px;
+    }
+        .input-box {
+            max-width: 100%;
+        }
+        .city .input-box,
+        .input-box.half-box {
+            max-width: 50%;
+            /*max-width: -webkit-calc(50% - 4px);*/
+            /*max-width: calc(50% - 2px);*/
+        }
+        .input-textarea-box br {
+            display: none;
+        }
+        .contact-form-bottom-box .left-box,
+        .contact-form-bottom-box .right-box {
+            float: none;
+            width: 100%;
+            padding: 0;
+        }
+        .contact-form-bottom-box .left-box {
+            margin-bottom: 100px;
+        }
 }
 
 @media all and (max-width: 600px) {
@@ -204,11 +360,14 @@
         -o-transition: background-color .35s ease-in;
         transition: background-color .35s ease-in;
     }
-    .home #header {
-    }
-    .home #header.scrolling {
+
+    #header.scrolling {
         position: fixed;
+        width: 100%;
         background-color: #FFFFFF;
+        -webkit-box-shadow: 0 1px 15px 0 rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 1px 15px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 1px 15px 0 rgba(0,0,0,0.1);
     }
         .scrolling .logo .light {
             display: none;
@@ -421,12 +580,6 @@
         .section-mission .content.big > * {
             margin-bottom: 3px;
         }
-            .content ul > li:before {
-                width: 4px;
-                height: 4px;
-                margin-top: 10px;
-                margin-right: 6px;
-            }
     .section-mission {
         margin-bottom: 58px;
     }
@@ -473,10 +626,187 @@
                 .footer-text a {
                     font-size: 14px;
                 }
+    .section-what-we-do {
+        padding-top: 83px;
+    }
+        .section-what-we-do .section-title.big {
+            margin-bottom: 15px;
+            font-size: 27px;
+        }
+        .feasibility-box .left-box {
+            margin-bottom: 50px;
+            padding-left: 18px;
+        }
+        .icon-pencil {
+            top: -52px;
+            right: 18px;
+            width: 42px;
+        }
+        .icon-screw {
+            top: 48px;
+            right: 30px;
+            width: 70px;
+        }
+        .feasibility-img-box:before {
+            top: 70px;
+            height: 42px;
+        }
+    .feasibility-img-box {
+        left: -35px;
+    }
+        .feasibility-img-box img {
+            max-width: 100%;
+            max-width: -webkit-calc(100% + 34px);
+            max-width: calc(100% + 34px);
+        }
+    .feasibility-box {
+        margin-bottom: 22px;
+    }
+        .planning-services-box .inner-box {
+            padding: 20px 15px 32px;
+            border-width: 2px;
+        }
+        .box-title {
+            margin-bottom: 9px;
+            font-size: 18px;
+            word-spacing: 0;
+            letter-spacing: .01em;
+        }
+    .planning-services-box {
+        margin-bottom: 36px;
+    }
+    .customized-box .right-box {
+        margin-top: 65px;
+    }
+        .icon-factory {
+            top: 0;
+            right: 13px;
+            width: 148px;
+        }
+        .customized-box .inner-box {
+            padding: 20px 0 16px 18px;
+        }
+        .customized-box .section-title.big {
+            margin-bottom: 18px;
+        }
+    .customized-box {
+        margin-bottom: 14px;
+    }
+    .additional-box {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+        .additional-box .inner-box {
+            max-width: 100%;
+            padding: 20px 16px 20px;
+            border-width: 2px;
+        }
+            .additional-box .box-title {
+                margin-bottom: 10px;
+            }
+    .icon-system {
+        max-width: 155px;
+    }
+
+    .section-contact-us {
+        padding: 35px 0 30px;
+    }
+        .contact-us-top-box {
+            margin-bottom: 30px;
+        }
+            .contact-us-top-box .left-box,
+            .contact-us-top-box .right-box {
+                float: none;
+                width: 100%;
+                padding: 0;
+            }
+                .contact-us-top-box .right-box > :last-child {
+                    margin-bottom: 0;
+                }
+                .section-contact-us .section-title.big {
+                    margin-bottom: 32px;
+                    font-size: 27px;
+                }
+                .contact-us-img-wrap {
+                    max-width: 195px;
+                    margin: 0 auto 20px;
+                }
+                .contact-email,
+                .contact-address {
+                    margin-bottom: 20px;
+                    font-size: 17px;
+                }
+                .contact-form-list > li {
+                    margin-bottom: 4px;
+                }
+                    .contact-form-box label {
+                        margin-bottom: 1px;
+                        font-size: 17px;
+                        line-height: 1;
+                    }
+                    .input-style {
+                        min-height: 24px;
+                        padding: 2px 10px;
+                        font-size: 16px;
+                        border-width: 1px;
+                    }
+                    textarea.input-style {
+                        height: 194px;
+                        padding: 2px 10px;
+                        font-size: 16px;
+                    }
+            .recaptcha-text {
+                font-size: 17px;
+            }
+            a.btn, .btn {
+                max-width: 220px;
+                padding: 9px 20px;
+                font-size: 21px;
+            }
+        .contact-form-bottom-box .left-box {
+            margin-bottom: 42px;
+        }
+            .contact-form-img-wrap {
+                margin-left: 17px;
+            }
+            .contact-form-img-wrap:after {
+                bottom: 42px;
+                height: 60px;
+            }
+                .contact-form-img-wrap img {
+                    max-width: 100%;
+                    max-width: -webkit-calc(100% + 53px);
+                    max-width: calc(100% + 53px);
+                }
+    .content {
+        font-size: 15px;
+    }
+        .content > * {
+            margin-bottom: 15px;
+        }
+        .content ul {
+            margin-bottom: 23px;
+        }
+            .content ul > li {
+                padding-left: 14px;
+            }
+            .content ul > li:before {
+                width: 4px;
+                height: 4px;
+                margin-top: 7px;
+                margin-right: 7px;
+            }
+            .customized-box .content ul > li {
+                padding-left: 20px;
+            }
+            .customized-box .content ul > li:before {
+                left: 0;
+            }
     .content.big {
         font-size: 17px;
     }
         .content.big > * {
             margin-bottom: 20px;
         }
+
 }
